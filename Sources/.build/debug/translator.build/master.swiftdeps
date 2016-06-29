@@ -1,0 +1,6 @@
+version: "Apple Swift version 3.0-dev (LLVM cb08d1dbbd, Clang 383859a9c4, Swift 9e8266aaeb)"
+options: "c4cf7d38ee01207d5d834e45855c16f6"
+build_time: [520505324, 465323000]
+inputs:
+  "/Users/Dennis/SwiftServer/SwiftServer/Source/Greetings.swift": [520504367, 0]
+  "/Users/Dennis/SwiftServer/SwiftServer/Source/main.swift": [520504350, 0]

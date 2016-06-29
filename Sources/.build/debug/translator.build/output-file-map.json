@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/master.swiftdeps"
+  },
+  "/Users/Dennis/SwiftServer/SwiftServer/Source/Greetings.swift": {
+    "dependencies": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/Greetings.d",
+    "object": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/Greetings.swift.o",
+    "swiftmodule": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/Greetings~partial.swiftmodule",
+    "swift-dependencies": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/Greetings.swiftdeps"
+  },
+  "/Users/Dennis/SwiftServer/SwiftServer/Source/main.swift": {
+    "dependencies": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/main.d",
+    "object": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/main.swift.o",
+    "swiftmodule": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/main.swiftdeps"
+  }
+}

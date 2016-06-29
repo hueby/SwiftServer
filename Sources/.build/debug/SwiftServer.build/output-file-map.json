@@ -1,0 +1,17 @@
+{
+  "": {
+    "swift-dependencies": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/SwiftServer.build/master.swiftdeps"
+  },
+  "/Users/Dennis/SwiftServer/SwiftServer/Source/Greetings.swift": {
+    "dependencies": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/SwiftServer.build/Greetings.d",
+    "object": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/SwiftServer.build/Greetings.swift.o",
+    "swiftmodule": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/SwiftServer.build/Greetings~partial.swiftmodule",
+    "swift-dependencies": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/SwiftServer.build/Greetings.swiftdeps"
+  },
+  "/Users/Dennis/SwiftServer/SwiftServer/Source/main.swift": {
+    "dependencies": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/SwiftServer.build/main.d",
+    "object": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/SwiftServer.build/main.swift.o",
+    "swiftmodule": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/SwiftServer.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/SwiftServer.build/main.swiftdeps"
+  }
+}

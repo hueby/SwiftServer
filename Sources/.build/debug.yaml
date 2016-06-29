@@ -1,0 +1,31 @@
+client:
+  name: swift-build
+tools: {}
+targets:
+  "test": ["<translator.module>","<translator.exe>"]
+  "main": ["<translator.module>","<translator.exe>"]
+default: "main"
+commands: 
+  "<translator.module>":
+    tool: swift-compiler
+    executable: "/Users/Dennis/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-06-06-a.xctoolchain/usr/bin/swiftc"
+    module-name: "translator"
+    module-output-path: "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.swiftmodule"
+    inputs: ["<CcURL.module>","<CJSONC.module>"]
+    outputs: ["<translator.module>","/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/Greetings.swift.o","/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/main.swift.o"]
+    import-paths: ["/Users/Dennis/SwiftServer/SwiftServer/.build/debug"]
+    temps-path: "/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build"
+    objects: ["/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/Greetings.swift.o","/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/main.swift.o"]
+    other-args: ["-j8","-D","SWIFT_PACKAGE","-Onone","-g","-enable-testing","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-Xcc","-fmodule-map-file=/Users/Dennis/SwiftServer/SwiftServer/Packages/CcURL-1.1.0/module.modulemap","-Xcc","-fmodule-map-file=/Users/Dennis/SwiftServer/SwiftServer/Packages/CJSONC-1.0.0/module.modulemap","-module-cache-path","/Users/Dennis/SwiftServer/SwiftServer/.build/debug/ModuleCache"]
+    sources: ["/Users/Dennis/SwiftServer/SwiftServer/Source/Greetings.swift","/Users/Dennis/SwiftServer/SwiftServer/Source/main.swift"]
+    is-library: false
+    enable-whole-module-optimization: false
+    num-threads: "8"
+
+  "<translator.exe>":
+    tool: shell
+    description: "Linking SwiftServer/.build/debug/translator"
+    inputs: ["/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/Greetings.swift.o","/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/main.swift.o"]
+    outputs: ["<translator.exe>","/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator"]
+    args: ["/Users/Dennis/Library/Developer/Toolchains/swift-DEVELOPMENT-SNAPSHOT-2016-06-06-a.xctoolchain/usr/bin/swiftc","-target","x86_64-apple-macosx10.10","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-g","-L/Users/Dennis/SwiftServer/SwiftServer/.build/debug","-o","/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator","-F","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks","-emit-executable","/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/Greetings.swift.o","/Users/Dennis/SwiftServer/SwiftServer/.build/debug/translator.build/main.swift.o"]
+
