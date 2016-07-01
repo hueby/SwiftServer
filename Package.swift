@@ -12,6 +12,5 @@ let package = Package(
     name:  "SwiftServer",
     dependencies: [
         .Package(url: "https://github.com/czechboy0/Socks.git", majorVersion: 0, minor: 7),
-        .Package(url: "https://github.com/SwiftyJSON/SwiftyJSON", majorVersion: 2, minor:3)
     ]
 )

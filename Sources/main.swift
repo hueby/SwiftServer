@@ -7,14 +7,8 @@
 //
 
 import Foundation
-import Commander
 
 func modString(input: String) -> String {
-    let main = command {
-	print("Hello World")	
-    }
-    
-    main.run()
     return input.uppercased()
 }
 

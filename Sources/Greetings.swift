@@ -28,5 +28,5 @@ func testSocket() {
 }
 
 func greeting(greet: String) -> String {
-    return String(format: "Hello, %@! Nice to meet you.", greet)
+    return String("Hello,\(greet)! Nice to meet you.")
 }
